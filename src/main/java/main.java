@@ -8,7 +8,7 @@ public class main {
         System.out.println("Calculadora basica entre dos numeros");
         System.out.println("Ingresa un numero para calcular");
         a = escaner.nextInt();
-        System.out.println("Ingresa la operacion matematica");
+        System.out.println("Elige un numero que represente la operacion que quieras realizar");
         System.out.println("Digita 1 si es suma");
         System.out.println("Digita 2 si es resta");
         System.out.println("Digita 3 si es multiplicacion");
@@ -31,22 +31,28 @@ public class main {
     }
 
     public static void suma(int a, int b) {
-        int i = a + b;
-        System.out.println(i);
+        int resultado = a + b;
+        System.out.println("Tu resultado es " + resultado);
     }
 
     public static void resta(int a, int b) {
-        int i = a - b;
-        System.out.println(i);
+        int resultado = a - b;
+        System.out.println("Tu resultado es " + resultado);
     }
 
     public static void multiplicacion(int a, int b) {
-        int i = a * b;
-        System.out.println(i);
+        int resultado = a * b;
+        System.out.println("Tu resultado es " + resultado);
     }
 
     public static void division(int a, int b) {
-        int i = a / b;
-        System.out.println(i);
+        if (b == 0) {
+            System.out.println("Tu segundo numero no debe ser igual a 0, intentalo nuevamente");
+        } else {
+        int resultado = a / b;
+        System.out.println("Tu resultado es " + resultado);
+        }
     }
+
 }
+
