@@ -45,6 +45,7 @@ public class main {
         System.out.println("Tu resultado es " + resultado);
     }
 
+    //cuando yo trabajo con static, esta funciona sobre la clase y no sobre la instancia.
     public static void division(int a, int b) {
         if (b == 0) {
             System.out.println("Tu segundo numero no debe ser igual a 0, intentalo nuevamente");
