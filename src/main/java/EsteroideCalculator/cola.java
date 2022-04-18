@@ -13,6 +13,7 @@ package EsteroideCalculator;
     el primer número es el 3 y el último el 9). Los elementos de la cola vendrán separados por espacios entre si.
     Si dos números no están separados por espacio, entonces representan un solo número.*/
 
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -20,12 +21,16 @@ public class cola {
     public static void main(String[] args) {
         double queue1;
         double queue2;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa tus numeros");
-        queue1 = scanner.nextDouble();
-        queue2 = scanner.nextDouble();
-        //double resultado =
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("Ingresa tus numeros");
+        //queue1 = scanner.nextDouble();
+        //queue2 = scanner.nextDouble();
 
-        System.out.println("La suma de las colas: " + queue1 + " " + queue2 + " es: " + "resultado");
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.offer(1000);
+        queue.offer(50);
+        System.out.println(20000);
+        System.out.println(queue.poll());
+        System.out.println(queue);
     }
 }

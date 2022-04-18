@@ -5,38 +5,9 @@ import java.util.Iterator;
 import java.util.Queue;
 
 public class queue {
-    public static Double sum(Double queue1, Double queue2) {
-        Queue<Integer> queue = new Queue<Integer>() {
-            @Override
-            public boolean add(Integer integer) {
-                return false;
-            }
-
-            @Override
-            public boolean offer(Integer integer) {
-                return false;
-            }
-
-            @Override
-            public Integer remove() {
-                return null;
-            }
-
-            @Override
-            public Integer poll() {
-                return null;
-            }
-
-            @Override
-            public Integer element() {
-                return null;
-            }
-
-            @Override
-            public Integer peek() {
-                return null;
-            }
-
+    public static Queue<Double> sum(Double queue1, Double queue2) {
+        Queue<Double> queue;
+        queue = new Queue<Double>() {
             @Override
             public int size() {
                 return 0;
@@ -53,7 +24,7 @@ public class queue {
             }
 
             @Override
-            public Iterator<Integer> iterator() {
+            public Iterator<Double> iterator() {
                 return null;
             }
 
@@ -68,6 +39,11 @@ public class queue {
             }
 
             @Override
+            public boolean add(Double aDouble) {
+                return false;
+            }
+
+            @Override
             public boolean remove(Object o) {
                 return false;
             }
@@ -78,7 +54,7 @@ public class queue {
             }
 
             @Override
-            public boolean addAll(Collection<? extends Integer> c) {
+            public boolean addAll(Collection<? extends Double> c) {
                 return false;
             }
 
@@ -96,6 +72,45 @@ public class queue {
             public void clear() {
 
             }
-        }
+
+            @Override
+            public boolean equals(Object o) {
+                return false;
+            }
+
+            @Override
+            public int hashCode() {
+                return 0;
+            }
+
+            @Override
+            public boolean offer(Double aDouble) {
+                return false;
+            }
+
+            @Override
+            public Double remove() {
+                return null;
+            }
+
+            @Override
+            public Double poll() {
+                return null;
+            }
+
+            @Override
+            public Double element() {
+                return null;
+            }
+
+            @Override
+            public Double peek() {
+                return null;
+            }
+        };
+        queue.offer(queue1);
+        queue.offer(queue2);
+        System.out.println(queue1);
+        return queue;
     }
 }
